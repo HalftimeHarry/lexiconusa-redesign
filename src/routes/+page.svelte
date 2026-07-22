@@ -10,35 +10,35 @@ import { onMount } from 'svelte';
 			label: 'Services',
 			href: '#services',
 			icon: 'services',
-			bg: 'bg-slate-900/70 hover:bg-slate-800/80',
+			bg: 'bg-slate-900/70 hover:!bg-emerald-600/70',
 			iconColor: 'text-slate-300'
 		},
 		{
 			label: 'Offices',
 			href: '#offices',
 			icon: 'offices',
-			bg: 'bg-slate-950/55 hover:bg-slate-800/80',
+			bg: 'bg-slate-950/55 hover:!bg-emerald-600/70',
 			iconColor: 'text-slate-300'
 		},
 		{
 			label: 'What Sets Us Apart',
 			href: '#what-sets-apart',
 			icon: 'star',
-			bg: 'bg-slate-900/70 hover:bg-slate-800/80',
+			bg: 'bg-slate-900/70 hover:!bg-emerald-600/70',
 			iconColor: 'text-slate-300'
 		},
 		{
 			label: 'Get Started',
 			href: '#get-started',
 			icon: 'rocket',
-			bg: 'bg-slate-950/55 hover:bg-slate-800/80',
+			bg: 'bg-slate-950/55 hover:!bg-emerald-600/70',
 			iconColor: 'text-slate-300'
 		},
 		{
 			label: 'Contact',
 			href: '#contact',
 			icon: 'contact',
-			bg: 'bg-slate-900/70 hover:bg-slate-800/80',
+			bg: 'bg-slate-900/70 hover:!bg-emerald-600/70',
 			iconColor: 'text-slate-300'
 		}
 	];
@@ -82,7 +82,7 @@ import { onMount } from 'svelte';
 <main id="top" class="min-h-screen bg-[radial-gradient(circle_at_20%_0%,#1b3d62_0%,#0f2744_38%,#081a30_100%)] text-slate-100">
 	<aside class="fixed top-0 left-0 z-30 hidden h-screen w-72 flex-col bg-[#0b213b]/85 p-6 backdrop-blur lg:flex">
 		<a href="#services" aria-label="Home" title="Home" class="mb-8 block">
-			<span class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-white">
+			<span class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-white transition-colors duration-200 hover:!bg-emerald-600/70">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 24 24"
@@ -175,7 +175,7 @@ import { onMount } from 'svelte';
 				href="#services"
 				aria-label="Home"
 				title="Home"
-				class="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white/10 text-white"
+				class="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white/10 text-white transition-colors duration-200 hover:!bg-emerald-600/70"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +220,7 @@ import { onMount } from 'svelte';
 					href="#services"
 					aria-label="Home"
 					title="Home"
-					class="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white/10 text-white"
+					class="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-white/10 text-white transition-colors duration-200 hover:!bg-emerald-600/70"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -302,7 +302,7 @@ import { onMount } from 'svelte';
 			<p class="mx-auto mt-6 max-w-4xl text-center text-base leading-relaxed text-slate-200 sm:text-lg">
 				For over 30 years, LexiconUSA has been the simultaneous conference interpretation partner for
 				organizations that will not accept anything less than complete accuracy. We support unions,
-				associations, corporations, and government sessions with AIIC-level conference interpreters.
+				<span class="rounded px-1 transition-colors duration-200 hover:bg-emerald-600/35 hover:text-emerald-100">associations, corporations, and government sessions with AIIC-level conference interpreters.</span>
 			</p>
 
 			<div class="mt-8 flex flex-wrap justify-center gap-3">
@@ -311,7 +311,7 @@ import { onMount } from 'svelte';
 					target="_blank"
 					rel="noreferrer"
 					variant="outline"
-					class="border-cyan-200/30 bg-[#0b213b] text-white hover:bg-[#12365f] hover:text-white"
+					class="border-cyan-200/30 bg-[#0b213b] text-white hover:!bg-emerald-600 hover:text-white"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -333,7 +333,7 @@ import { onMount } from 'svelte';
 					target="_blank"
 					rel="noreferrer"
 					variant="outline"
-					class="border-cyan-200/30 bg-[#0b213b] text-white hover:bg-[#12365f] hover:text-white"
+					class="border-cyan-200/30 bg-[#0b213b] text-white hover:!bg-emerald-600 hover:text-white"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -356,7 +356,7 @@ import { onMount } from 'svelte';
 					target="_blank"
 					rel="noreferrer"
 					variant="outline"
-					class="border-cyan-200/30 bg-[#0b213b] text-white hover:bg-[#12365f] hover:text-white"
+					class="border-cyan-200/30 bg-[#0b213b] text-white hover:!bg-emerald-600 hover:text-white"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -376,7 +376,7 @@ import { onMount } from 'svelte';
 			</div>
 
 			<div class="mt-8 flex flex-wrap justify-center gap-3">
-				<Button href="https://www.lexiconusa.com/Information.html" size="lg" class="border border-cyan-200/30 bg-[#0b213b] px-8 py-6 text-lg text-white hover:bg-[#12365f] hover:text-white">
+				<Button href="https://www.lexiconusa.com/Information.html" size="lg" class="border border-cyan-200/30 bg-[#0b213b] px-8 py-6 text-lg text-white hover:!bg-emerald-600 hover:text-white">
 					Request a Quote | Call 1.888.283.2001
 				</Button>
 			</div>
@@ -386,7 +386,7 @@ import { onMount } from 'svelte';
 		<section id="offices" class="mt-10">
 			<div class="mx-auto -mt-5 max-w-5xl rounded-3xl border-2 border-white/15 bg-transparent p-6">
 				<h2 class="text-center text-2xl font-semibold sm:text-3xl">Major Languages</h2>
-				<div class="mt-4 grid gap-2 text-sm sm:grid-cols-2 lg:grid-cols-4">
+				<div class="mt-4 grid gap-2 text-sm sm:grid-cols-2 lg:grid-cols-4 [&>div]:transition-colors [&>div]:duration-200 [&>div:hover]:bg-emerald-500/30">
 					<div class="flex items-center justify-center gap-3 rounded-lg bg-white/10 px-3 py-2">
 						<span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-400 text-[11px] text-slate-950">✓</span>
 						Spanish
@@ -438,7 +438,7 @@ import { onMount } from 'svelte';
 				</div>
 			</div>
 
-			<div class="mx-auto max-w-5xl rounded-3xl border-2 border-white/15 bg-transparent p-6">
+			<div class="mx-auto mt-[10px] max-w-5xl rounded-3xl border-2 border-white/15 bg-transparent p-6">
 				<h2 class="mx-auto flex w-full items-center justify-center gap-2 text-center text-2xl font-semibold sm:text-3xl">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
