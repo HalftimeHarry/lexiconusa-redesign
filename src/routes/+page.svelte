@@ -306,7 +306,13 @@ import { onMount } from 'svelte';
 			</p>
 
 			<div class="mt-8 flex flex-wrap justify-center gap-3">
-				<Button href="https://www.lexiconusa.com/Simultaneous.html" target="_blank" rel="noreferrer" variant="outline">
+				<Button
+					href="https://www.lexiconusa.com/Simultaneous.html"
+					target="_blank"
+					rel="noreferrer"
+					variant="outline"
+					class="border-cyan-200/30 bg-[#0b213b] text-white hover:bg-[#12365f] hover:text-white"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 24 24"
@@ -322,7 +328,13 @@ import { onMount } from 'svelte';
 					</svg>
 					25+ Years Experience</Button
 				>
-				<Button href="https://www.lexiconusa.com/Simultaneous.html" target="_blank" rel="noreferrer" variant="outline">
+				<Button
+					href="https://www.lexiconusa.com/Simultaneous.html"
+					target="_blank"
+					rel="noreferrer"
+					variant="outline"
+					class="border-cyan-200/30 bg-[#0b213b] text-white hover:bg-[#12365f] hover:text-white"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						viewBox="0 0 24 24"
@@ -344,6 +356,7 @@ import { onMount } from 'svelte';
 					target="_blank"
 					rel="noreferrer"
 					variant="outline"
+					class="border-cyan-200/30 bg-[#0b213b] text-white hover:bg-[#12365f] hover:text-white"
 				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -363,7 +376,7 @@ import { onMount } from 'svelte';
 			</div>
 
 			<div class="mt-8 flex flex-wrap justify-center gap-3">
-				<Button href="https://www.lexiconusa.com/Information.html" size="lg" class="border-2 border-black bg-[#175227] px-8 py-6 text-lg text-white hover:bg-[#123d1e]">
+				<Button href="https://www.lexiconusa.com/Information.html" size="lg" class="border border-cyan-200/30 bg-[#0b213b] px-8 py-6 text-lg text-white hover:bg-[#12365f] hover:text-white">
 					Request a Quote | Call 1.888.283.2001
 				</Button>
 			</div>
