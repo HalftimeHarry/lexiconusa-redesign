@@ -1,54 +1,42 @@
-# LexiconUSA Website Redesign
+# sv
 
-A modern redesign concept for the LexiconUSA corporate website.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Project Goals
+## Creating a project
 
-- Modernize the visual design
-- Improve user experience
-- Increase quote requests
-- Simplify navigation
-- Highlight trust and credibility
-- Improve mobile responsiveness
-- Integrate promotional video
-- Optimize performance
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Features
-
-- Responsive design
-- Modern landing page
-- Hero video section
-- Service overview
-- Trust indicators
-- Nationwide offices
-- Call-to-action sections
-- Contact form
-
-## Tech Stack
-
-- HTML5
-- CSS3
-- TypeScript
-- Vite
-- Netlify
-
-## Development
-
-```bash
-npm install
-npm run dev
+```sh
+# create a new project
+npx sv create my-app
 ```
 
-## Build
+To recreate this project with the same configuration:
 
-```bash
+```sh
+# recreate this project
+npx sv@0.16.5 create --template minimal --types ts --add tailwindcss="plugins:none" eslint prettier --no-download-check --install npm .
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
 npm run build
 ```
 
-## Deployment
+You can preview the production build with `npm run preview`.
 
-Hosted on Netlify.
-
-## Status
-
-🚧 In Development
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
